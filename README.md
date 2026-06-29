@@ -1,203 +1,84 @@
-# House-Price-Prediction
-House Price Prediction using Linear Regression in Python
-# 🏠 House Price Prediction using Linear Regression
+# House Price Prediction using Linear Regression
 
-## 📌 Project Overview
+## Introduction
 
-This project predicts the estimated price of a house using the **Linear Regression** algorithm from **Scikit-learn**.
+This project implements a **Linear Regression** model to estimate house prices based on property characteristics. The model is trained using a sample housing dataset and predicts the expected price of a house from features such as area, number of bedrooms, bathrooms, and floors.
 
-The model is trained on a sample dataset containing house details such as:
-
-- Area (Square Feet)
-- Number of Bedrooms
-- Number of Bathrooms
-- Number of Floors
-
-After training, the user can enter the details of a new house, and the model predicts its estimated selling price.
+The project demonstrates the fundamentals of regression analysis and how machine learning can be applied to solve real-world price prediction problems.
 
 ---
 
-# 🎯 Objectives
+## Technologies
 
-- Build a House Price Prediction model using Linear Regression.
-- Train the model using a sample dataset.
-- Predict house prices based on user inputs.
-- Evaluate the model using performance metrics.
-- Visualize the prediction results using a graph.
-
----
-
-# 🧠 Machine Learning Algorithm
-
-**Algorithm Used: Linear Regression**
-
-Linear Regression is a supervised machine learning algorithm used to predict continuous numerical values by finding the best-fit linear relationship between the input features and the target variable.
+* Python
+* Pandas
+* Matplotlib
+* Scikit-learn
 
 ---
 
-# 📂 Dataset
+## Input Features
 
-The project uses a sample dataset consisting of **15 house records**.
+The model uses the following property details as input:
 
-### Input Features
+* Area (Square Feet)
+* Number of Bedrooms
+* Number of Bathrooms
+* Number of Floors
 
-- Area (Square Feet)
-- Bedrooms
-- Bathrooms
-- Floors
+**Target Variable**
 
-### Target Variable
-
-- House Price
+* House Price
 
 ---
 
-# ⚙️ Technologies Used
+## Model Development
 
-- Python
-- Pandas
-- Scikit-learn
-- Matplotlib
+The project includes the following stages:
 
----
-
-# 📊 Model Evaluation
-
-The model performance is evaluated using:
-
-### Mean Squared Error (MSE)
-
-Measures the average squared difference between the actual and predicted house prices.
-
-- Lower MSE indicates better prediction accuracy.
-
-### R² Score
-
-Measures how well the model fits the data.
-
-- R² Score ranges from **0 to 1**
-- Closer to **1** indicates a better model.
+* Creating a housing dataset.
+* Selecting input features and target values.
+* Training a Linear Regression model.
+* Evaluating the model using Mean Squared Error (MSE) and R² Score.
+* Predicting the price of a new house based on user-provided inputs.
+* Comparing actual and predicted prices through a scatter plot.
 
 ---
 
-# 📈 Data Visualization
+## Model Evaluation
 
-The project generates an **Actual vs Predicted House Price** graph.
+The performance of the model is measured using:
 
-The graph helps visualize how closely the predicted house prices match the actual house prices.
-
----
-
-# 🚀 Features
-
-- Train a Linear Regression model
-- Predict house prices from user input
-- Display estimated house price
-- Calculate Mean Squared Error (MSE)
-- Calculate R² Score
-- Plot Actual vs Predicted House Price graph
+* **Mean Squared Error (MSE):** Measures the average prediction error.
+* **R² Score:** Indicates how well the model explains the relationship between the input features and house prices.
 
 ---
 
-# ▶️ How to Run
+## Prediction
 
-### Clone the repository
+After training, the application prompts the user to enter:
 
-```bash
-git clone https://github.com/your-username/House-Price-Prediction-Linear-Regression.git
-```
+* Area
+* Bedrooms
+* Bathrooms
+* Floors
 
-### Navigate to the project folder
-
-```bash
-cd House-Price-Prediction-Linear-Regression
-```
-
-### Install required libraries
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run the project
-
-```bash
-python house_price_prediction.py
-```
+Based on these values, the model estimates the house price.
 
 ---
 
-# 💻 Sample Input
+## Future Improvements
 
-```
-Area (sq.ft): 2200
-Bedrooms: 4
-Bathrooms: 3
-Floors: 2
-```
-
----
-
-# 📤 Sample Output
-
-```
-Estimated House Price:
-
-₹ 8,120,000.00
-```
+* Train the model using a larger real estate dataset.
+* Include additional features such as location, age of the property, parking space, and amenities.
+* Split the dataset into training and testing sets for a more realistic evaluation.
+* Compare Linear Regression with other regression algorithms such as Decision Tree Regression, Random Forest Regression, and XGBoost.
+* Deploy the model as a web application for interactive predictions.
 
 ---
 
-# 📸 Output Graph
-
-The project displays a graph showing:
-
-- Actual House Prices
-- Predicted House Prices
-
-This graph helps evaluate the performance of the Linear Regression model.
-
-> *(You can add a screenshot of the graph here after uploading it to your repository.)*
-
-```markdown
-![Output Graph](house_price_prediction.png)
-```
-
----
-
-# 📁 Project Structure
-
-```
-House-Price-Prediction-Linear-Regression
-│
-├── house_price_prediction.py
-├── README.md
-├── requirements.txt
-├── house_price_prediction.png
-└── .gitignore
-```
-
----
-
-# 📚 Learning Outcomes
-
-Through this project, you will learn:
-
-- Data preprocessing using Pandas
-- Building a Linear Regression model
-- Training and testing machine learning models
-- Predicting continuous values
-- Evaluating model performance using MSE and R² Score
-- Visualizing predictions using Matplotlib
-
----
-
-# 👨‍💻 Author
+## Author
 
 **Britto Domnic Aro J**
 
-Machine Learning Enthusiast | Python Developer | AI Learner
-
----
-
-# ⭐ If you found this project useful, consider giving it a Star on GitHub!
+Aspiring Machine Learning Engineer | Python Developer | Data Analytics Enthusiast
